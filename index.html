@@ -5,11 +5,46 @@
     <title>Thực hành Hiển thị đầu ra</title>
 </head>
 <body>
-<button type="button" onclick="showMessage();"> Bấm vào em đi anh ơi!!! </button>
-<script>
-    function showMessage() {
-        alert("Em chào anh ạ!");
-    }
-</script>
+<div>
+    <h2>Bài tập 1</h2>
+    <button type="button" onclick="showMessage1();"> Mời anh bấm vào em! </button>
+    <script>
+        function showMessage1() {
+            alert("Em chào anh ạ!");
+        }
+    </script>
+</div>
+
+<div>
+    <h2>Bài tập 2</h2>
+    <div id="messagediv">
+        <button type="button" onclick="showMessage2()">Anh bấm tiếp vào em đi ạ!</button>
+        <script>
+            function showMessage2(){
+                document.getElementById("messagediv").innerHTML = "Em lại chào anh ạ!";
+            }
+        </script>
+    </div>
+</div>
+
+<div>
+    <h2>Bài tập 3</h2>
+    <button type="button" onclick="showMessage3()">Bấm nữa anh ơi!</button>
+    <script>
+        function showMessage3(){
+            document.write("Em tiếp tục chào anh phát nữa đấy ạ!");
+        }
+    </script>
+</div>
+
+<div>
+    <h2>Bài tập 4</h2>
+    <button type="button" onclick="showMessage4()">Bấm cho em phát cuối</button>
+    <script>
+        function showMessage4() {
+            console.log("Em chào lần cuối đấy, anh có nghe không ạ?");
+        }
+    </script>
+</div>
 </body>
 </html>
